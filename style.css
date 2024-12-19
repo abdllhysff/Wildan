@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #8e44ad, #3498db);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  header {
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome {
+    font-size: 2.5rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .name {
+    color: #f39c12;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+  }
+  
+  main {
+    padding: 2rem 0;
+  }
+  
+  .profile {
+    margin-bottom: 3rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+  
+  .intro-text {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+  }
+  
+  .hobbies {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hobby-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .hobby {
+    padding: 1rem 2rem;
+    background: white;
+    color: #3498db;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .hobby:hover {
+    transform: scale(1.1);
+    background: #f39c12;
+    color: white;
+  }
+  
+  footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
